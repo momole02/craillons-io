@@ -95,13 +95,14 @@ function App() {
           <ColorDisplay color={selectedColor}/>
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         <Stage 
-          className={"w-min bg-[#ededed] border-[1px] border-slate-300 shadow-md"}
+          className={" cursor-crosshair w-min bg-[#ededed] border-[1px] border-slate-300 shadow-md"}
           width={canvasWidth} 
           height={canvasHeight}
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
           onMouseMove={handleMouseMove}
           >
         <Layer>
