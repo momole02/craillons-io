@@ -102,6 +102,7 @@ function App() {
           height={canvasHeight}
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
           onMouseMove={handleMouseMove}
           >
         <Layer>
